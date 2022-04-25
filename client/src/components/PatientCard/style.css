@@ -1,0 +1,33 @@
+.card-container {
+  width: 300px;
+  height: 430px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 10px 1px #000;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upper-container {
+  height: 150px;
+  background: #7f00ff;
+}
+
+.img-container {
+  background: white;
+  width: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  transform: translate(100px, 100px);
+}
+.img-container img {
+  border-radius: 50%;
+}
+
+.imgs {
+  width: 100px;
+}
