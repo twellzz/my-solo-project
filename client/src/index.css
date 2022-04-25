@@ -18,3 +18,9 @@ body {
 .container {
   display: flex;
 }
+
+.top-container {
+  background: pink;
+  width: 50%;
+  height: 50%;
+}
