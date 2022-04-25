@@ -12,44 +12,49 @@ export default function SideBar() {
   return (
     <nav class="nav-bar">
       <img src={logo} alt="chosen medical related logo" class="logo-img" />
-      <ul>
-        <li>
-          <a href="#">
-            <img src={home} alt="" class="icon-img" />
-            <span class="nav-item">Home</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src={schedule} alt="" class="icon-img" />
-            <span class="nav-item">Schedule</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src={patients} alt="" class="icon-img" />
-            <span class="nav-item">Patients</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src={settings} alt="" class="icon-img" />
-            <span class="nav-item">Settings</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src={help} alt="" class="icon-img" />
-            <span class="nav-item">Help</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="logout">
-            <img src={logOut} alt="" class="icon-img" />
-            <span class="nav-item">Log out</span>
-          </a>
-        </li>
-      </ul>
+
+      <div class="nav-bar-links">
+        <ul>
+          <li>
+            <a href="#">
+              <img src={home} alt="" class="icon-img" />
+              <span class="nav-name">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src={schedule} alt="" class="icon-img" />
+              <span class="nav-name">Schedule</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src={patients} alt="" class="icon-img" />
+              <span class="nav-name">Patients</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src={settings} alt="" class="icon-img" />
+              <span class="nav-name">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src={help} alt="" class="icon-img" />
+              <span class="nav-name">Help</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="logout">
+          <li>
+            <a href="#">
+              <img src={logOut} alt="" class="icon-img" />
+              <span class="nav-name">Log out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }

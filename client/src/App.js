@@ -7,11 +7,13 @@ function App() {
   return (
     <div className="container">
       <SideBar />
-      <div class="top-container">
+      {/* <div class="top-container">
         <NewAppt />
         <ApptConsult />
       </div>
-      {/* <TodaysPatients /> */}
+      <div class="bottom-container">
+        <TodaysPatients />
+      </div> */}
     </div>
   );
 }
