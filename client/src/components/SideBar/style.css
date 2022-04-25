@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=JetBrains+Mono:wght@600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+  /* font-family: "Archivo Narrow", sans-serif; */
+}
+
+body {
+  background: rgb(229, 229, 229);
+}
+
+.logo-img {
+  height: 55px;
+  margin-left: 23px;
+  margin-top: 15px;
+}
+
+.nav-bar {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  background: white;
+  width: 250px;
+  overflow: hidden;
+  box-shadow: 0 5px 12px rgb(101, 98, 98);
+}
+
+.logo span {
+  font-weight: bold;
+  padding-left: 15px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+a {
+  position: relative;
+  color: #020202;
+  font-size: 14px;
+  width: 250px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 25px;
+}
+
+li {
+  margin-left: 16px;
+  margin-top: 25px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.icon-img {
+  height: 20px;
+}
+
+.logout {
+  position: absolute;
+  bottom: 20px;
+}
