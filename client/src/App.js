@@ -6,15 +6,15 @@ import ApptConsult from "./components/ApptConsult/ApptConsult";
 function App() {
   return (
     <div className="container">
-      <SideBar />
+      <div class="side-bar-container">
+        <SideBar />
+      </div>
       <div class="sub-container">
         <div class="top-container">
           <NewAppt />
           <ApptConsult />
         </div>
-        {/* <div class="bottom-container">
-        <TodaysPatients />
-      </div> */}
+        <div class="bottom-container">hello world</div>
       </div>
     </div>
   );
