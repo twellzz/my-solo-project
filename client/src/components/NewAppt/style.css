@@ -1,6 +1,37 @@
-.appt-container {
-  background-color: wheat;
-  border-radius: 10px;
-  height: 100%;
+.new-appt-container {
+  border: 2px solid black;
   width: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.radio-group {
+  display: flex;
+}
+
+.new-appt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.return-appt {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-button {
+  color: white;
+  background-color: orange;
+  font-weight: bold;
+  align-items: center;
+  width: 75%;
 }

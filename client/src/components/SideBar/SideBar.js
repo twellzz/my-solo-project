@@ -45,15 +45,21 @@ export default function SideBar() {
               <span class="nav-name">Help</span>
             </a>
           </li>
-        </ul>
-        <ul class="logout">
-          <li>
+          <li class="logout">
             <a href="#">
               <img src={logOut} alt="" class="icon-img" />
               <span class="nav-name">Log out</span>
             </a>
           </li>
         </ul>
+        {/* <ul class="logout">
+          <li>
+            <a href="#">
+              <img src={logOut} alt="" class="icon-img" />
+              <span class="nav-name">Log out</span>
+            </a>
+          </li>
+        </ul> */}
       </div>
     </nav>
   );

@@ -2,5 +2,5 @@ import React from "react";
 import "./style.css";
 
 export default function ApptConsult() {
-  return <div>ApptConsult</div>;
+  return <div class="appt-consult-container">ApptConsult</div>;
 }

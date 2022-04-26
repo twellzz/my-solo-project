@@ -1,5 +1,5 @@
 import SideBar from "./components/SideBar/SideBar";
-import TodaysPatients from "./components/TodaysPatients/TodaysPatients";
+// import TodaysPatients from "./components/TodaysPatients/TodaysPatients";
 import NewAppt from "./components/NewAppt/NewAppt";
 import ApptConsult from "./components/ApptConsult/ApptConsult";
 
@@ -11,7 +11,9 @@ function App() {
       </div>
       <div class="sub-container">
         <div class="top-container">
-          <NewAppt />
+          <div class="top-left-container">
+            <NewAppt />
+          </div>
           <ApptConsult />
         </div>
         <div class="bottom-container">hello world</div>
