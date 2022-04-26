@@ -12,6 +12,6 @@ app.use(express.json()); // turn on the body parser which allows us to receive j
 
 app.use(router); // turn on the router
 
-app.listen(port, () =>
-  console.log(`SERVER IS TURNED ON AND WE ARE NOW LISTENING ON PORT # ${port}`)
-); // turn on the server at the defined port number
+app.listen(port, () => {
+  console.log(`WE ARE NOW LISTENING ON PORT # ${port}`);
+}); // turn on the server at the defined port number
