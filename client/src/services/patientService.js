@@ -1,4 +1,4 @@
-const url = "http://localhost:1234";
+const url = "http://localhost:3001";
 
 function pullPatients() {
   return fetch(`${url}/`)
@@ -10,10 +10,11 @@ function pullPatients() {
 function postPatient(event) {
   return fetch(`${url}/`, {
     method: "POST",
+    // mode: "cors",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ event }),
+    body: JSON.stringify(event),
   })
     .then((res) => res.json())
     .then((data) => data)

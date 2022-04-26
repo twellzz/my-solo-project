@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import "./style.css";
 import { patientService } from "../../services/patientService";
+import back from "../../images/left-arrow.png";
 
 export default function CreateNewPatient({ toggler }) {
   const firstName = useRef();
@@ -20,15 +21,18 @@ export default function CreateNewPatient({ toggler }) {
       cpf: id,
       insurance: seguro,
     };
-    patientService.postEvent(newPatient);
+    patientService.postPatient(newPatient);
     console.log(newPatient);
   }
 
   return (
     <div class="new-patient-container">
-      <button class="back-button" type="button" onClick={() => toggler(false)}>
-        BACK
-      </button>
+      <img
+        src={back}
+        alt="back button"
+        class="back-arrow"
+        onClick={() => toggler(false)}
+      />
       <div class="new-form">
         <div className="input-group">
           <label htmlFor="first-name">First Name</label>

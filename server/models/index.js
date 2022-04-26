@@ -1,7 +1,7 @@
 // here we actually connect to our db
 const mongoose = require("mongoose");
 const root = "mongodb://localhost:";
-const port = "5678";
+const port = "27017";
 const dbName = "clinixdb";
 const myDB = root + port + "/" + dbName;
 

@@ -10,4 +10,4 @@ const patientsSchema = new mongoose.Schema({
   insurance: String,
 });
 
-module.exports = mongoose.model("schedule", patientsSchema); // exporting the database schema
+module.exports = mongoose.model("patients", patientsSchema); // exporting the database schema

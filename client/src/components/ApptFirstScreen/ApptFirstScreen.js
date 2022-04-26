@@ -31,7 +31,7 @@ export default function ApptFirstScreen() {
       ) : newPatientForm ? (
         <CreateNewPatient toggler={setNewPatientForm} />
       ) : (
-        <ExistingPatientAppt />
+        <ExistingPatientAppt toggler={setExistingForm} />
       )}
     </form>
   );
