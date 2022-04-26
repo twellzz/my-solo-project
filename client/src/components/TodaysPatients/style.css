@@ -1,22 +1,22 @@
 .patients-container {
-  margin-top: 50px;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
   background: white;
   padding: 10px;
   border-radius: 10px;
-  width: 75%;
+  width: 90%;
+  height: 80%;
+  margin-top: 20px;
   position: relative;
-  box-shadow: 0 5px 12px rgb(101, 98, 98);
+  box-shadow: 0 7px 15px rgb(101, 98, 98);
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .todays-patients {
   position: absolute;
-  top: -30px;
+  top: -25px;
   left: 5px;
   font-weight: bold;
-  font-size: 19px;
+  font-size: 15px;
+  text-transform: uppercase;
 }

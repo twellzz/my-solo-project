@@ -1,6 +1,6 @@
 import SideBar from "./components/SideBar/SideBar";
-// import TodaysPatients from "./components/TodaysPatients/TodaysPatients";
-import NewAppt from "./components/NewAppt/NewAppt";
+import TodaysPatients from "./components/TodaysPatients/TodaysPatients";
+import ApptFirstScreen from "./components/ApptFirstScreen/ApptFirstScreen";
 import ApptConsult from "./components/ApptConsult/ApptConsult";
 
 function App() {
@@ -12,11 +12,15 @@ function App() {
       <div class="sub-container">
         <div class="top-container">
           <div class="top-left-container">
-            <NewAppt />
+            <ApptFirstScreen />
           </div>
-          <ApptConsult />
+          <div class="top-right-container">
+            <ApptConsult />
+          </div>
         </div>
-        <div class="bottom-container">hello world</div>
+        <div class="bottom-container">
+          <TodaysPatients />
+        </div>
       </div>
     </div>
   );
