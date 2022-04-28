@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import "./style.css";
 import { patientService } from "../../services/patientService";
 import back from "../../images/left-arrow.png";
@@ -8,6 +8,8 @@ export default function CreateNewPatient({ toggler }) {
   const lastName = useRef();
   const cpf = useRef();
   const insurance = useRef();
+
+  const [patientSubmit, setPatientSubmit] = useState(false);
 
   function handleAddPatient() {
     const first = firstName.current.value;
@@ -22,44 +24,52 @@ export default function CreateNewPatient({ toggler }) {
       insurance: seguro,
     };
     patientService.postPatient(newPatient);
-    console.log(newPatient);
+    setPatientSubmit(true);
   }
 
   return (
     <div class="new-patient-container">
-      <img
-        src={back}
-        alt="back button"
-        class="back-arrow"
-        onClick={() => toggler(false)}
-      />
-      <div class="new-form">
-        <div className="input-group">
-          <label htmlFor="first-name">First Name</label>
-          <input name="first-name" ref={firstName} />
+      {!patientSubmit ? (
+        <div class="new-patient-container">
+          <img
+            src={back}
+            alt="back button"
+            class="back-arrow"
+            onClick={() => toggler(false)}
+          />
+          <div class="new-form">
+            <div className="input-group">
+              <label htmlFor="first-name">First Name</label>
+              <input name="first-name" ref={firstName} />
+            </div>
+            <div className="input-group">
+              <label htmlFor="last-name">Last Name</label>
+              <input name="last-name" ref={lastName} />
+            </div>
+            <div className="input-group">
+              <label htmlFor="cpf">CPF</label>
+              <input name="cpf" ref={cpf} />
+            </div>
+            <div className="input-group">
+              <label htmlFor="insurance">Insurance</label>
+              <input name="insurance" ref={insurance} />
+            </div>
+            <div className="input-group">
+              <button
+                class="submission-button"
+                type="button"
+                onClick={handleAddPatient}
+              >
+                Register Patient
+              </button>
+            </div>
+          </div>
         </div>
-        <div className="input-group">
-          <label htmlFor="last-name">Last Name</label>
-          <input name="last-name" ref={lastName} />
+      ) : (
+        <div>
+          Added patient {firstName.current.value} {lastName.current.value}
         </div>
-        <div className="input-group">
-          <label htmlFor="cpf">CPF</label>
-          <input name="cpf" ref={cpf} />
-        </div>
-        <div className="input-group">
-          <label htmlFor="insurance">Insurance</label>
-          <input name="insurance" ref={insurance} />
-        </div>
-        <div className="input-group">
-          <button
-            class="submission-button"
-            type="button"
-            onClick={handleAddPatient}
-          >
-            Register Patient
-          </button>
-        </div>
-      </div>
+      )}
     </div>
   );
 }

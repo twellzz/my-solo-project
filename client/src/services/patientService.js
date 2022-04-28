@@ -1,7 +1,7 @@
 const url = "http://localhost:3001";
 
-function pullPatients() {
-  return fetch(`${url}/`)
+function pullPatients(id) {
+  return fetch(`${url}/${id}`)
     .then((res) => res.json())
     .then((data) => data)
     .catch((e) => e);

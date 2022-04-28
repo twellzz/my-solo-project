@@ -8,10 +8,7 @@ const patients = require("../controllers/patients");
 
 console.log("Line 9");
 
-router.get("/test", () => {
-  console.log("WE GOT A GET");
-});
-
 router.post("/", patients.postPatient);
+router.get("/:id", patients.getPatients);
 
 module.exports = router;

@@ -7,9 +7,9 @@ export default function TodaysPatients() {
     <>
       <div class="patients-container">
         <div class="todays-patients">Today's Appointments</div>
+        {/* <PatientCard />
         <PatientCard />
-        <PatientCard />
-        <PatientCard />
+        <PatientCard /> */}
       </div>
     </>
   );

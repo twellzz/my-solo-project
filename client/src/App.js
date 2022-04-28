@@ -6,7 +6,7 @@ import ApptConsult from "./components/ApptConsult/ApptConsult";
 function App() {
   return (
     <div className="container">
-      <div class="side-bar-container">
+      <div>
         <SideBar />
       </div>
       <div class="sub-container">

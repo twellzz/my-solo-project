@@ -8,6 +8,7 @@
   position: relative;
   box-shadow: 0 7px 15px rgb(101, 98, 98);
   display: flex;
+  justify-content: center;
 }
 
 .consult-appt {
@@ -17,4 +18,15 @@
   font-weight: bold;
   font-size: 15px;
   text-transform: uppercase;
+}
+
+.consult-form {
+  display: flex;
+  flex-direction: column;
+  background: wheat;
+  margin: 15px;
+}
+
+.label {
+  margin: 15px;
 }

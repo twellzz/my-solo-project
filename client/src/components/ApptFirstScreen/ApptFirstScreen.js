@@ -10,7 +10,7 @@ export default function ApptFirstScreen() {
   return (
     <form class="form-container">
       <div class="new-schedule">Schedule New Appointment</div>
-      {!newPatientForm && !existingForm ? (
+      {/* {!newPatientForm && !existingForm ? (
         <>
           {" "}
           <button
@@ -32,7 +32,7 @@ export default function ApptFirstScreen() {
         <CreateNewPatient toggler={setNewPatientForm} />
       ) : (
         <ExistingPatientAppt toggler={setExistingForm} />
-      )}
+      )} */}
     </form>
   );
 }

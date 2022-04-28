@@ -4,7 +4,7 @@ import back from "../../images/left-arrow.png";
 
 export default function ExistingPatientAppt({ toggler }) {
   return (
-    <div class="cpf-search">
+    <div class="search">
       <img
         src={back}
         alt="back button"
